@@ -1,0 +1,129 @@
+.modal-container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.modal-bg{
+  width: 100%;
+  height: 100%;
+  z-index:1;
+  position: relative;
+}
+
+.detail-modals{
+  position: absolute;
+  width: 600px;
+  min-height: 600px;
+  height: auto;
+  z-index: 2;
+  top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal-todo-infos{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 25px;
+}
+
+.modal-todo-names, .modal-todo-deadlines, .modal-todo-completed{
+  width: 100px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.modal-todo-detail-title{
+    margin-top: 20px;
+    width: 400px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+.modal-todo-detail, .modal-no-detail{
+  margin-top: 5px;
+  width: 400px;
+  text-align: left;
+  height: auto;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.modal-subtodos-ul{
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  flex-grow: 1;
+}
+
+.modal-subtodos-li{
+}
+
+.modal-subtodo-infos{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-subtodo-names, .modal-subtodo-deadlines, .modal-subtodo-completed{
+  width: 90px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.modal-subtodo-detail-title{
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+.modal-subtodo-detail, .modal-sub-no-detail{
+  margin-top: 5px;
+  width: 100%;
+  text-align: left;
+  height: auto;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.modal-buttons{
+  width: 80px;
+  height: 30px;
+  min-height: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 30px;
+  align-self: auto;
+}
+
+.modal-buttons:hover{
+  color: white;
+  background-color: black;
+}
+
+.modal-buttons:active{
+  transform: scale(0.9);
+}

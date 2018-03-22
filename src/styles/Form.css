@@ -1,0 +1,49 @@
+.add-todo-form-container{
+      display: flex;
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    background-color: white;
+    overflow-y: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.add-todo-form{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 500px;
+}
+
+.todo-name-input, .todo-date-input{
+  min-height: 25px;
+}
+
+.todo-detail-input{
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  min-height: 100px;
+}
+
+.subtodo-list-container{
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.subtodo-list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.subtodo-detail-input{
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-buttons{
+  min-height: 30px;
+}
